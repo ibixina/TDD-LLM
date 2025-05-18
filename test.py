@@ -1,11 +1,22 @@
-#!/usr/bin/env python
-import sys
-args = sys.argv
 
-def main():
-    pass
+def fibonacci(n):
+  """
+  This function generates the Fibonacci sequence up to n terms.
+  """
+  a = 0
+  b = 1
+  if n <= 0:
+    print("Please enter a positive integer")
+  elif n == 1:
+    print(a)
+  else:
+    print(a)
+    print(b)
+    for i in range(2,n):
+      c = a + b
+      a = b
+      b = c
+      print(c)
 
-if __name__=="__main__":
-    main()
-
+fibonacci(10)
 
